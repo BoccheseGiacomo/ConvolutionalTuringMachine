@@ -12,9 +12,9 @@ The CTM can be envisioned as a form of artificial intelligence where every aspec
 
 CTM is envisioned as a cellular automaton with an inherent capacity for learning and adaptability. Its central goal is to demonstrate the emergence of desired behaviors and to theoretically model any algorithm or function, provided ample space and computation time. The project is anchored in several key objectives:
 
-- **Meta-Learning and Beyond**: The model aspires to not only learn but to develop internal learning algorithms, adapting and refining its strategies based on the feedback received. Theoretical considerations suggest the possibility of second-order meta-learning, where the CTM could evolve internal-rewards, guiding itself towards optimal behaviors with the maximum data efficiency and generalization abilities.
+- **Meta-Learning and Beyond**: The model aspires to not only learn by selection but to develop internal learning algorithms that are much faster than genetic algorithm alone, adapting and refining its strategies based on the reward received. Heuristic/intuitive considerations suggest the possibility of Self-Reinforcement Learning, where the CTM could evolve internal-rewards, guiding itself towards optimal behaviors with the maximum data efficiency and generalization abilities. This way the model not only learns when given external data + reward, but also can evolve during "dreaming sleep", meaning when the model is left without any data, but reasons internally and makes internal simulations in order to get towards optimal behaviours, a bit like the human mind when thinks the best strategy even before trying it by running mental experiments and self-generating data and rewards.
   
-- **Complex Behavior Simulation**: The kernel of the CTM is analogous to a stencil in differential equations, capable of simulating intricate behaviors akin to those observed in nonlinear partial differential equations. This ability opens the door to modeling complex physical structures, potentially emulating the spatial configurations of neuronal networks.
+- **Complex Behavior Simulation**: The kernel of the CTM is analogous to a stencil in finite difference simulations, capable of simulating intricate behaviors akin to those observed in nonlinear partial differential equations. This ability opens the door to modeling complex physical structures, potentially emulating the spatial configurations of neuronal networks or other ways of modeling an external world.
 
 ## Challenges and Training
 
@@ -26,6 +26,11 @@ One of the most intriguing yet challenging aspects of the CTM is its training pr
 ## Current State and Future Directions
 
 The CTM project is in its nascent stages, with training methodologies and practical applications still under development. The current focus is on understanding the theoretical limits and practical capabilities of the model, particularly in training it to achieve the envisioned emergent behaviors.
+
+Future steps:
+-implementing a genetic algorithm for basic training
+-try to make it learn a task with GA alone (without reward)
+-running it a lot on different tasks with reward and measuring if meta learning actually emerges
 
 ## Installation and Usage
 The actual setup is manual: you need to clone the repo and go with your python environment.
