@@ -47,7 +47,7 @@ Looking ahead, the project has several critical milestones to achieve:
 
 2. **Task Learning Without Reward**: An early experiment will involve attempting to train the CTM to learn a specific task using the genetic algorithm alone, without any external reward mechanism. This test aims to explore the CTM's capabilities in a more constrained learning environment.
 
-3. **Extensive Testing with Rewards**: The subsequent phase will focus on extensively running the CTM across a variety of tasks while incorporating external rewards. The goal here is to observe and measure the emergence of meta-learning. This stage is crucial for understanding whether and how the CTM develops its internal learning strategies and adapts to diverse challenges.
+3. **Extensive Training with Rewards**: The subsequent phase will focus on extensively training the CTM across a variety of tasks while incorporating external rewards. The goal here is to observe and measure the emergence of meta-learning. This stage is crucial for understanding whether and how the CTM develops its internal learning strategies and adapts to diverse challenges.
 
 ## Installation and Usage
 The actual setup is manual: you need to clone the repo and go with your python environment.
