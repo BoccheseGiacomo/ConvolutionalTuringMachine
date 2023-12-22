@@ -22,7 +22,33 @@ CTM is envisioned as a cellular automaton with an inherent capacity for learning
 - **Meta-Learning**: CTM is designed not just to learn thanks to external optimizers but to autonomously develop internal reinforcement learning algorithms. These algorithms, activated by external rewards fed into the state space, are intended to surpass the efficiency of genetic algorithms.
 
 - **Self-Reinforcement Learning**: The model is also hypothesized to engage in what we called "Self-Reinforcement Learning", evolving internal reward mechanisms that guide it toward optimal behaviors with maximal data efficiency and generalization. Notably, the CTM can engage in a form of 'cognitive simulation' or 'imagination dream', akin to human mental experimentation. In this state, devoid of external data, the model internally simulates scenarios, hypothesizing outcomes and thus self-generating synthetic data and rewards. This process allows the CTM to strategize and evolve toward optimal behaviors, mirroring the human ability to mentally forecast and strategize before actual implementation, and generalizing thanks to this self-generated data.
-  
+
+
+## Internal mechanics description
+
+### Initial Setup and Configuration
+
+The Convolutional Turing Machine (CTM) operates within a predefined two-dimensional grid, each cell of which can hold a numerical value representing its current state.
+
+Key components within this grid are designated for specific roles:
+- **Input Cells**: Located at predetermined positions, these cells are where external data inputs are received.
+- **Output Cells**: These cells are monitored to extract the CTM's output or response after processing.
+- **Reward Cell**: Receives an external reward signal, crucial for the internal learning phase.
+- **Halting Cell**: Determines when the CTM stops its computation for a given input, controlling the computation length.
+
+### Kernel
+
+At the heart of the CTM is the convolutional kernel, a small matrix that dictates the interaction between a cell and its neighbors during state evolution.
+
+### Inference and Processing
+
+During an inference cycle, the CTM undergoes the following steps:
+1. **Receiving Inputs**: Data inputs are fed into the designated input cells.
+2. **Convolutional Processing**: The grid undergoes state transitions driven by the convolution operation with the kernel, blending local cell values to evolve the grid's state.
+3. **Halting Condition**: The process repeats until the state of the halting cell reaches a predefined threshold, signaling the end of computation.
+4. **Output Retrieval**: The state values in the output cells are then interpreted as the CTM's processed result.
+5. **Reward Integration (For Learning)**: In learning scenarios, an external reward is provided to the reward cell, influencing the latent state space's optimization but not altering the kernel.
+
 
 ## Challenges and Training
 
