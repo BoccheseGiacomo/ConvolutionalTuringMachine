@@ -10,8 +10,8 @@ What sets the CTM apart is its inherent structure that not only enables spontane
 
 CTM is envisioned as a cellular automaton with an inherent capacity for learning and adaptability. Its central goal is to demonstrate the emergence of desired behaviors and to theoretically model any algorithm or function, provided ample space and computation time. The project is anchored in several key objectives:
 
-- **Exploration of Convolutional Dynamics**: Utilizing a convolution kernel, the CTM is an experiment in evolving a system to best associate inputs with outputs, learning from external rewards, and navigating the intricate landscape of state space evolution.
-- **Meta-Learning and Beyond**: The model aspires to not only learn but to develop internal learning algorithms, adapting and refining its strategies based on the feedback received. Theoretical considerations suggest the possibility of second-order meta-learning, where the CTM could evolve meta-rewards, guiding itself towards optimal behaviors with increasingly minimal training data.
+- **Meta-Learning and Beyond**: The model aspires to not only learn but to develop internal learning algorithms, adapting and refining its strategies based on the feedback received. Theoretical considerations suggest the possibility of second-order meta-learning, where the CTM could evolve internal-rewards, guiding itself towards optimal behaviors with the maximum data efficiency and generalization abilities.
+  
 - **Complex Behavior Simulation**: The kernel of the CTM is analogous to a stencil in differential equations, capable of simulating intricate behaviors akin to those observed in nonlinear partial differential equations. This ability opens the door to modeling complex physical structures, potentially emulating the spatial configurations of neuronal networks.
 
 ## Challenges and Training
