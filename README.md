@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The Convolutional Turing Machine (CTM) represents a pioneering step in the exploration of computational models inspired by the complexities and emergent behaviors of cellular automata. Drawing inspiration from Lenia, a cellular automaton known for its rich, lifelike patterns, the CTM seeks to harness the power of convolution operations in a two-dimensional geometric space evolving over time. This project delves into the realm of state space models, aiming to unravel the potential of these systems in simulating, learning, and, ultimately, understanding complex behaviors and algorithms.
+The CTM is a research project designed to explore adaptive learning systems within computational models, drawing inspiration from the dynamic behaviors of Lenia-like cellular automata. Central to its design is the use of convolution operations in a two-dimensional geometric space, enhanced by Adaptive Computation Time (ACT) for introducing halting properties and flow control. This mechanism positions the CTM as a finite state approximation of a universal Turing machine.
+
+What sets the CTM apart is its inherent structure that not only enables spontaneous meta-learning but also allows the emergence of self-reinforcement learning and dynamic memory organization.
 
 ## Project Vision and Objectives
 
