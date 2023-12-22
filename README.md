@@ -14,7 +14,7 @@ CTM is envisioned as a cellular automaton with an inherent capacity for learning
 
 - **Complex Behavior Simulation**: The kernel of the CTM is analogous to a stencil in finite difference simulations, capable of simulating intricate behaviors akin to those observed in nonlinear partial differential equations. This ability opens the door to modeling complex physical structures, potentially emulating the spatial configurations of neuronal networks or other ways of modeling an external world.
 
-- **Halting and Flow control**:Incorporating Adaptive Computation Time (ACT) into the CTM is pivotal for expanding its computational repertoire, particularly in terms of representability. ACT introduces halting-based flow control that allows for looping operations, a crucial aspect for broadening the range of computable functions. This enhancement is not just about efficiency; it fundamentally transforms the CTM's capability to simulate more complex processes. By enabling controlled looping and flow manipulation within its operations, the CTM dramatically extends its ability to represent a diverse array of functions through autoregressivity. Furthermore, this aspect of flow control is integral to the concept of Turing completeness. In a theoretical framework where the state space and computation time are unbounded, ACT positions the CTM to potentially touch on universality in computation. A note about the dimension of the kernel: in order to give this ability of turing completeness we need to understand what is the minimal kernel dimension and minimal encoded state dimension that allows for universality, even if we believe a small kernel like 3x3 or 5x5 is enough, since the computational process is encoded more on the initial state that on the kernel. The state space is not only important for "storing" information but is an active part in the role of computation.
+- **Halting and Flow control**: Incorporating Adaptive Computation Time (ACT) into the CTM is pivotal for expanding its computational repertoire, particularly in terms of representability. ACT introduces halting-based flow control that allows for looping operations, a crucial aspect for broadening the range of computable functions. This enhancement is not just about efficiency; it fundamentally transforms the CTM's capability to simulate more complex processes. By enabling controlled looping and flow manipulation within its operations, the CTM dramatically extends its ability to represent a diverse array of functions through autoregressivity. Furthermore, this aspect of flow control is integral to the concept of Turing completeness. In a theoretical framework where the state space and computation time are unbounded, ACT positions the CTM to potentially touch on universality in computation. A note about the dimension of the kernel: in order to give this ability of turing completeness we need to understand what is the minimal kernel dimension and minimal encoded state dimension that allows for universality, even if we believe a small kernel like 3x3 or 5x5 is enough, since the computational process is encoded more on the initial state that on the kernel. The state space is not only important for "storing" information but is an active part in the role of computation.
  
 - **Meta-Learning**: CTM is designed not just to learn thanks to external optimizers but to autonomously develop internal reinforcement learning algorithms. These algorithms, activated by external rewards fed into the state space, are intended to surpass the efficiency of genetic algorithms.
 
@@ -27,16 +27,24 @@ One of the most intriguing yet challenging aspects of the CTM is its training pr
 
 - **Genetic Algorithms for Exploration**: Training the CTM is envisioned to rely heavily on genetic algorithms. The focus is on exploration, encouraging a wide variety of policies and behaviors to be experimented with.
 - **Complex Training Dynamics**: Given the theoretical capabilities of the CTM, training it to harness these abilities is an ambitious endeavor. The model needs to propagate information effectively, construct complex internal models, and potentially develop its reinforcement learning algorithms.
-- **Alternatives**: We thought to use GAs because they are very versatile and does no prior assumption on processes and data, but valid candidates are other zeroth-order optimization algorithms like simulated annealing and particle swarm optimization, or some kind of Reinforcement Learning approach.
+- **Alternatives**: We thought to use GAs because they are very versatile and does no prior assumption on processes and data, but valid candidates are other zeroth-order optimization algorithms like simulated annealing and particle swarm optimization, or some reinforcement learning method.
+
 
 ## Current State and Future Directions
 
-The CTM project is in its nascent stages, with training methodologies and practical applications still under development. The current focus is on understanding the theoretical limits and practical capabilities of the model, particularly in training it to achieve the envisioned emergent behaviors.
+### Current Progress
 
-Future steps:
--implementing a genetic algorithm for basic training
--try to make it learn a task with GA alone (without reward)
--running it a lot on different tasks with reward and measuring if meta learning actually emerges
+As of now, the CTM project is in its early developmental phase. The foundational model has been established, but it has yet to be applied or tested in practical scenarios. Key aspects like training methodologies and their effectiveness in achieving desired behaviors are still theoretical and await empirical validation. To date, no concrete results have been achieved; the project remains in the realm of setup and initial exploration.
+
+### Future Steps
+
+Looking ahead, the project has several critical milestones to achieve:
+
+1. **Implementing a Genetic Algorithm**: The initial phase of training will involve the implementation of a genetic algorithm. This step is fundamental for basic training and setting the groundwork for more advanced learning processes.
+
+2. **Task Learning Without Reward**: An early experiment will involve attempting to train the CTM to learn a specific task using the genetic algorithm alone, without any external reward mechanism. This test aims to explore the CTM's capabilities in a more constrained learning environment.
+
+3. **Extensive Testing with Rewards**: The subsequent phase will focus on extensively running the CTM across a variety of tasks while incorporating external rewards. The goal here is to observe and measure the emergence of meta-learning. This stage is crucial for understanding whether and how the CTM develops its internal learning strategies and adapts to diverse challenges.
 
 ## Installation and Usage
 The actual setup is manual: you need to clone the repo and go with your python environment.
