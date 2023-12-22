@@ -24,8 +24,7 @@ One of the most intriguing yet challenging aspects of the CTM is its training pr
 The CTM project is in its nascent stages, with training methodologies and practical applications still under development. The current focus is on understanding the theoretical limits and practical capabilities of the model, particularly in training it to achieve the envisioned emergent behaviors.
 
 ## Installation and Usage
-
-(TBA - Provide details on installation and basic usage instructions once available)
+The actual setup is manual: you need to clone the repo and go with your python environment.
 
 ## Contributions and Collaboration
 
