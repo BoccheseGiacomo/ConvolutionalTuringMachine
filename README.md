@@ -81,9 +81,11 @@ The training process begins with the random initialization of these components a
 
 ### Emergence of Meta-Learning
 
-The emergence of meta-learning within the CTM is anticipated due to the system's inherent flexibility and capacity to model a broad class of algorithms, including internal optimizers. Theoretically, if a model, by chance, develops an ability to internally update its state more effectively in response to the convolution operations and the external rewards, it would exhibit faster and more efficient learning compared to other models. Such a model would have a higher chance of being selected in the GA process, thereby propagating its traits to subsequent generations.
+The emergence of meta-learning within the CTM is anticipated due to the system's inherent flexibility and capacity to model a broad class of algorithms, including internal optimizers. Theoretically, if a model, by chance, develops an ability to internally update its state in response the external rewards, it would exhibit faster and more efficient learning compared to other models. Such a model would have a higher chance of being selected in the GA process, thereby propagating its traits to subsequent generations.
 
 Over time, this leads to the dominance of models capable of such internal learning optimizations, making meta-learning an emergent standard within the population. This evolutionary process hinges on the principle that models which can internally incorporate reward information to refine their state will outperform and outlast those that do not, leading to the natural emergence of meta-learning capabilities in the CTM.
+
+The same may happen for Self-Reinforcement Learning, it may emerge from chance and then get selected.
 
 
 ## Current State and Future Directions
