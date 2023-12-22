@@ -59,6 +59,33 @@ One of the most intriguing yet challenging aspects of the CTM is its training pr
 - **Alternatives**: We thought to use GAs because they are very versatile and does no prior assumption on processes and data, but valid candidates are other zeroth-order optimization algorithms like simulated annealing and particle swarm optimization, or some reinforcement learning method.
 
 
+## Training Phase of the CTM with Genetic Algorithms
+
+### Components and Initialization
+
+In the training phase of the CTM, the primary components subject to training are:
+- **Kernel Values**: These define the convolutional behavior of the model.
+- **Initial State of the Grid**: This can include the entire grid or a subset, with some parts potentially fixed to a zero state.
+
+The training process begins with the random initialization of these components across a population of `n` CTM models. Each model in the population is uniquely characterized by its own set of kernel values and initial state.
+
+### Simulation and Selection
+
+1. **Running Simulations**: For each model in the population, a simulation is run where the model processes given inputs and generates outputs. During this phase, a reward is also provided, which is crucial for guiding the learning process.
+
+2. **Selection of the Best Models**: Post-simulation, models are evaluated based on their performance – how well they processed the inputs to match the expected outputs and utilized the reward. The best-performing models are selected for the next stage.
+
+3. **Reproduction with Genetic Operators**: The selected models undergo reproduction, where genetic operations like mutation and crossover are applied. This step generates a new population of models, inheriting and variating traits from the successful models of the previous generation.
+
+4. **Iterative Process**: This process of simulation, selection, and reproduction is repeated over multiple generations. With each iteration, the models are expected to progressively improve in their task performance.
+
+### Emergence of Meta-Learning
+
+The emergence of meta-learning within the CTM is anticipated due to the system's inherent flexibility and capacity to model a broad class of algorithms, including internal optimizers. Theoretically, if a model, by chance, develops an ability to internally update its state more effectively in response to the convolution operations and the external rewards, it would exhibit faster and more efficient learning compared to other models. Such a model would have a higher chance of being selected in the GA process, thereby propagating its traits to subsequent generations.
+
+Over time, this leads to the dominance of models capable of such internal learning optimizations, making meta-learning an emergent standard within the population. This evolutionary process hinges on the principle that models which can internally incorporate reward information to refine their state will outperform and outlast those that do not, leading to the natural emergence of meta-learning capabilities in the CTM.
+
+
 ## Current State and Future Directions
 
 ### Current Progress
