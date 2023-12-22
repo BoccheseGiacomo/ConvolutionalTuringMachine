@@ -6,6 +6,8 @@ The CTM is a research project designed to explore adaptive learning systems with
 
 What sets the CTM apart is its inherent structure that not only enables spontaneous meta-learning but also allows the emergence of self-reinforcement learning and dynamic memory organization.
 
+The CTM can be envisioned as a form of artificial intelligence where every aspect is emergent, without relying on pre-defined assumptions. This approach mirrors the intricate, life-like behaviors found in nature, where complexity and adaptability arise from deeply non-linear, interactive systems that evolve and get selected in order to best match a dynamic global maximum.
+
 ## Project Vision and Objectives
 
 CTM is envisioned as a cellular automaton with an inherent capacity for learning and adaptability. Its central goal is to demonstrate the emergence of desired behaviors and to theoretically model any algorithm or function, provided ample space and computation time. The project is anchored in several key objectives:
