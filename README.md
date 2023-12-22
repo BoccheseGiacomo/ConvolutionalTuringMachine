@@ -10,11 +10,14 @@ The CTM can be envisioned as a form of artificial intelligence where every aspec
 
 ## Project Vision and Objectives
 
-CTM is envisioned as a cellular automaton with an inherent capacity for learning and adaptability. Its central goal is to demonstrate the emergence of desired behaviors and to theoretically model any algorithm or function, provided ample space and computation time. The project is anchored in several key objectives:
+CTM is envisioned as a cellular automaton with an inherent capacity for learning and adaptability. Its central goal is to demonstrate the emergence of desired behaviors and to model any algorithm or function of interest, provided enough 2-d space and computation time. The project is anchored in several key objectives:
 
-- **Meta-Learning and Beyond**: The model aspires to not only learn by selection but to develop internal learning algorithms that are much faster than genetic algorithm alone, adapting and refining its strategies based on the reward received. Heuristic/intuitive considerations suggest the possibility of Self-Reinforcement Learning, where the CTM could evolve internal-rewards, guiding itself towards optimal behaviors with the maximum data efficiency and generalization abilities. This way the model not only learns when given external data + reward, but also can evolve during "dreaming sleep", meaning when the model is left without any data, but reasons internally and makes internal simulations in order to get towards optimal behaviours, a bit like the human mind when thinks the best strategy even before trying it by running mental experiments and self-generating data and rewards.
-  
 - **Complex Behavior Simulation**: The kernel of the CTM is analogous to a stencil in finite difference simulations, capable of simulating intricate behaviors akin to those observed in nonlinear partial differential equations. This ability opens the door to modeling complex physical structures, potentially emulating the spatial configurations of neuronal networks or other ways of modeling an external world.
+ 
+- **Meta-Learning**: CTM is designed not just to learn thanks to external optimizers but to autonomously develop internal reinforcement learning algorithms. These algorithms, activated by external rewards fed into the state space, are intended to surpass the efficiency of genetic algorithms.
+
+-**Self-Reinforcement Learning**: The model is also hypothesized to engage in what we called "Self-Reinforcement Learning", evolving internal reward mechanisms that guide it toward optimal behaviors with maximal data efficiency and generalization. Notably, the CTM can engage in a form of 'cognitive simulation' or 'imagination dream', akin to human mental experimentation. In this state, devoid of external data, the model internally simulates scenarios, hypothesizing outcomes and self-generating synthetic data and rewards. This process allows the CTM to strategize and evolve toward optimal behaviors, mirroring the human ability to mentally forecast and strategize before actual implementation.
+  
 
 ## Challenges and Training
 
