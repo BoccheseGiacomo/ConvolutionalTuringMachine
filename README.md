@@ -8,7 +8,7 @@ What sets the CTM apart is its inherent structure that not only enables spontane
 
 The CTM can be envisioned as a form of artificial intelligence where every aspect is emergent, without relying on pre-defined assumptions. This approach mirrors the intricate, life-like behaviors found in nature, where complexity and adaptability arise from deeply non-linear, interactive systems that evolve and get selected in order to best match a dynamic global maximum.
 
-It's important to emphasize that the CTM project, at this juncture, is highly experimental. *The theoretical claims present in this description are not all formally proved, many of them come from intuition*. The future steps outlined are exploratory in nature and aimed at gradually uncovering the potential and limitations of the model. As the project progresses, these steps will be critical in transitioning from heuristical concepts to tangible results and insights.
+It's important to emphasize that the SNM project, at this juncture, is highly experimental. *Some of the theoretical claims present in this description are not formally proved yet, many of them come from a kind of "rigorous deduction" and some intuition based on known concepts in deep learning and emergent systems*. The future steps outlined are exploratory in nature and aimed at gradually uncovering the potential and limitations of the model. As the project progresses, these steps will be critical in transitioning from heuristical concepts to tangible results and insights.
 
 
 ## Project Vision and Objectives
