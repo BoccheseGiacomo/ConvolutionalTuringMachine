@@ -13,6 +13,13 @@ It's important to emphasize that the CTM project, at this juncture, is highly ex
 ![simulation](https://github.com/BoccheseGiacomo/ConvolutionalTuringMachine/assets/104854120/e275428b-72fc-42b0-b4e3-4f2b67b5bd2d)
 *Figure 1: A showing the inference process of a random, non trained, CTM.*
 
+<div>
+  <img src="https://github.com/BoccheseGiacomo/ConvolutionalTuringMachine/assets/104854120/e275428b-72fc-42b0-b4e3-4f2b67b5bd2d" alt="CTM Simulation">
+  <br>
+  <p><em>Figure 1: A dynamic simulation of the CTM project showing emergent behaviors.</em></p>
+</div>
+
+
 
 ## Project Vision and Objectives
 
