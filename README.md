@@ -10,13 +10,12 @@ The CTM can be envisioned as a form of artificial intelligence where every aspec
 
 It's important to emphasize that the CTM project, at this juncture, is highly experimental. *Some of the theoretical claims present in this description are not formally proved yet, many of them come from a kind of "rigorous deduction" and some intuition based on known concepts in deep learning and emergent systems*. The future steps outlined are exploratory in nature and aimed at gradually uncovering the potential and limitations of the model. As the project progresses, these steps will be critical in transitioning from heuristical concepts to tangible results and insights.
 
-![simulation](https://github.com/BoccheseGiacomo/ConvolutionalTuringMachine/assets/104854120/e275428b-72fc-42b0-b4e3-4f2b67b5bd2d)
-*Figure 1: A showing the inference process of a random, non trained, CTM.*
+
 
 <div>
   <img src="https://github.com/BoccheseGiacomo/ConvolutionalTuringMachine/assets/104854120/e275428b-72fc-42b0-b4e3-4f2b67b5bd2d" alt="CTM Simulation" width="500" height="auto">
   <br>
-  <p><em>Figure 1: A dynamic simulation of the CTM project showing emergent behaviors.</em></p>
+  <p><em>Figure 1: A showing the inference process of a random, non trained, CTM.</em></p>
 </div>
 
 
