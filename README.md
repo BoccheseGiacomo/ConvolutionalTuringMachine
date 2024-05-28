@@ -120,6 +120,7 @@ The actual setup is manual: you need to clone the repo and go with your python e
 ## Contributions and Collaboration
 
 We welcome contributions and collaborations from researchers, enthusiasts, and anyone interested in exploring the frontiers of cellular automata and state space models. If you have ideas, suggestions, or want to contribute to the project, feel free to reach out or submit a pull request.
+Any modification should be done accordingly to the license: CC BY-NC-SA 4.0 
 
 ## Citation
 
