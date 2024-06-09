@@ -19,7 +19,7 @@ It's important to emphasize that the CTM project, at this juncture, is highly ex
 </div>
 
 
-Convolutional Turing Machine © 2023 by Giacomo Bocchese is licensed under CC BY-NC-SA 4.0
+Convolutional Turing Machine © by Giacomo Bocchese is licensed under CC BY-NC-SA 4.0
 
 ## Project Vision and Objectives
 
