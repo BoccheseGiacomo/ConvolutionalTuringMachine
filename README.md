@@ -115,6 +115,8 @@ Looking ahead, the project has several critical milestones to achieve:
 
 3. **Extensive Training with Rewards**: The subsequent phase will focus on extensively training the CTM across a variety of tasks while incorporating external rewards. The goal here is to observe and measure the emergence of meta-learning. This stage is crucial for understanding whether and how the CTM develops its internal learning strategies and adapts to diverse challenges.
 
+4. **Improvments**: To enhance the complexity of the behaviours we plan to transform the CTM to a 3-d system with dimension (n,n,2) instead of (n,n) by adding a new stacked layer below: long term memory layer: this layer controls the diffusivity of the system by a multiplicative factor for each cell, and is influenced from the activations of the upper layer. This way the system can spontaneously evolve "computing pathways". Even if this step may not increase the expressivity of the system, it's likely to increase the stability and the interpretability of the model.
+
 ## Installation and Usage
 The actual setup is manual: you need to clone the repo and go with your python environment.
 
