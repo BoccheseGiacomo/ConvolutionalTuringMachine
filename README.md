@@ -80,7 +80,7 @@ $$
 \begin{align}
 &s[x_{\text{idx}}] = x \\
 &s[r_{\text{idx}}] = r
-\end{align*}
+\end{align}
 $$
 
 ### Inference:
