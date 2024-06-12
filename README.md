@@ -62,7 +62,7 @@ During an inference cycle, the CTM undergoes the following steps:
 
 ## Mathematical description
 
-### Given:
+### Definitions:
 
 $$
 \begin{align*}
@@ -74,7 +74,7 @@ $$
 \end{align*}
 $$
 
-### BC: Boundary Conditions
+### BC: Boundary Conditions:
 
 $$
 \begin{align*}
@@ -83,7 +83,7 @@ $$
 \end{align*}
 $$
 
-### Inference
+### Inference:
 
 $$
 \begin{align*}
