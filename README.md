@@ -77,7 +77,7 @@ $$
 ### BC: Boundary Conditions:
 
 $$
-\begin{align*}
+\begin{align}
 &s[x_{\text{idx}}] = x \\
 &s[r_{\text{idx}}] = r
 \end{align*}
