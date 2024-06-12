@@ -61,7 +61,7 @@ During an inference cycle, the CTM undergoes the following steps:
 5. **Reward Integration (For Learning)**: In learning scenarios, an external reward is provided to the reward cell, influencing the latent state space's optimization but not altering the kernel.
 
 ### Mathematical description
-```latex
+```math
 \begin{document}
 
 \section*{Given:}
