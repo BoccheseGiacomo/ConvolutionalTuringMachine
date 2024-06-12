@@ -67,8 +67,8 @@ During an inference cycle, the CTM undergoes the following steps:
 $$
 \begin{align*}
 &x \in \mathbb{R}^d \quad \text{(Input vector} \rightarrow \text{multi-index } x_{\text{idx}} \text{ for indexing the input cells in } s) \\
-&y \in \mathbb{R}^q \quad \text{(Output vector} \rightarrow \text{single-index } y_{\text{idx}} \text{ for indexing } y) \\
-&r \in [-1,1] \quad \text{(Reward (scalar) } \rightarrow \text{multi-index } r_{\text{idx}}) \\
+&y \in \mathbb{R}^q \quad \text{(Output vector} \rightarrow \text{multi-index } y_{\text{idx}} \text{ for indexing } y) \\
+&r \in [-1,1] \quad \text{(Reward (scalar) } \rightarrow \text{single-index } r_{\text{idx}}) \\
 &s \in \mathbb{R}^{n \times n} \quad \text{(State space)} \\
 &k \in \mathbb{R}^{m \times m}, \quad m \ll n \\
 \end{align*}
