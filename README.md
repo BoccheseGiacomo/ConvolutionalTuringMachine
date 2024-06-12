@@ -87,16 +87,16 @@ $$
 
 $$
 \begin{align*}
-&\text{Load a pretrained } s(t=0) \text{ (initial state) and a pretrained kernel } k \\
-&\text{Take the input } x \text{ and the reward } r \text{ coming from the environment feedback of the previous step} \\
-&\text{Sample randomly } s = 0 \text{ or load a pretrained } s = 0 \\
+&\text{- Load a pretrained } s(t=0) \text{ (initial state) and a pretrained kernel } k \\
+&\text{- Take the input } x \text{ and the reward } r \text{ coming from the environment feedback of the previous step} \\
+&\text{- Sample randomly } s = 0 \text{ or load a pretrained } s = 0 \\
 &\text{While } s_t[h_{\text{idx}}] < 1: \quad \text{(until halting)} \\
 &\quad \text{Apply BC overwriting input and reward cells of } s_t \\
 &\quad s_{t+1} = f(k * s_t) \quad \text{(Convolution + function, if nonlinear function or identity (in this implementation, identity function))} \\
 &\text{When halts: } s_{\text{halt}} = s_t \\
 &\quad y = s_{\text{halt}}[y_{\text{idx}}] \\
-&\text{End or continue to next input } x, \text{ keeping the last state } s_{\text{halt}} \text{ as the new initial state } s_{\text{new}}(t=0) \\
-&\text{If continuing, interact with the environment or dataset and get the new reward } r_{\text{new}} \text{ for the next prediction} 
+&\text{- End or continue to next input } x, \text{ keeping the last state } s_{\text{halt}} \text{ as the new initial state } s_{\text{new}}(t=0) \\
+&\text{- If continuing, interact with the environment or dataset and get the new reward } r_{\text{new}} \text{ for the next prediction} 
 \end{align*}
 $$
 
