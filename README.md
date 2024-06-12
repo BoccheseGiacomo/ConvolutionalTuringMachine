@@ -77,10 +77,10 @@ $$
 ### BC: Boundary Conditions:
 
 $$
-\begin{aligned}
+\begin
 &s[x_{\text{idx}}] = x \\
 &s[r_{\text{idx}}] = r
-\end{aligned}
+\end
 $$
 
 ### Inference:
