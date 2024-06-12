@@ -60,6 +60,43 @@ During an inference cycle, the CTM undergoes the following steps:
 4. **Output Retrieval**: The state values in the output cells are then interpreted as the CTM's processed result.
 5. **Reward Integration (For Learning)**: In learning scenarios, an external reward is provided to the reward cell, influencing the latent state space's optimization but not altering the kernel.
 
+### Mathematical description
+```latex
+\begin{document}
+
+\section*{Given:}
+
+\begin{align*}
+&x \in \mathbb{R}^d \quad \text{(Input vector} \rightarrow \text{multi-index } x_{\text{idx}} \text{ for indexing the } x \text{ cells in } s) \\
+&y \in \mathbb{R}^q \quad \text{(Output vector} \rightarrow \text{multi-index } y_{\text{idx}} \text{ for indexing } y) \\
+&r \in \mathbb{R} \quad \text{(Reward (scalar) } \rightarrow \text{multi-index } r_{\text{idx}}) \\
+&s \in \mathbb{R}^{n \times n} \quad \text{(State space)} \\
+&k \in \mathbb{R}^{m \times m}, \quad m \ll n \\
+\end{align*}
+
+\section*{BC: Boundary Conditions}
+
+$s[x_{\text{idx}}] = x$ \\
+$s[r_{\text{idx}}] = r$
+
+\section*{Inference}
+
+\begin{align*}
+&\text{Load a pretrained } s(t=0) \text{ (initial state) and a pretrained kernel } k \\
+&\text{Take the input } x \text{ and the reward } r \text{ coming from the environment feedback of the previous step} \\
+&\text{Sample randomly } s = 0 \text{ or load a pretrained } s = 0 \\
+&\text{While } s_t[h_{\text{idx}}] < 1 \text{:} \quad \# \text{(until halting)} \\
+&\quad \text{Apply BC overwriting input and reward cells of } s_{\text{t}} \\
+&\quad s_{t+1} = f(k * s_t) \quad \# \text{Convolution + function, if nonlinear function or identity (in this implementation, identity function)} \\
+&\text{When halts: } s_{\text{halt}} = s_t \\
+&\quad y = s_{\text{halt}}[y_{\text{idx}}] \\
+&\text{End or continue to next input } x, \text{ keeping the last state } s_{\text{halt}} \text{ as the new initial state } s_{\text{new}}(t=0) \\
+&\text{If continuing, interact with the environment or dataset and get the new reward } r_{\text{new}} \text{ for the next prediction } 
+\end{align*}
+
+\end{document}
+```
+
 
 ## Challenges and Training
 
