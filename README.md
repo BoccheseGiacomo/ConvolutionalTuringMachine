@@ -89,7 +89,6 @@ $$
 \begin{align*}
 &\text{- Load a pretrained } s(t=0) \text{ (initial state) and a pretrained kernel } k \\
 &\text{- Take the input } x \text{ and the reward } r \text{ coming from the environment feedback of the previous step} \\
-&\text{- Sample randomly } s = 0 \text{ or load a pretrained } s = 0 \text{ and a kernel } k\\
 & \\
 &\text{While } s_t[h_{\text{idx}}] < 1: \quad \text{(until halting)} \\
 &\quad \text{Apply BC overwriting input and reward cells of } s_t \\
