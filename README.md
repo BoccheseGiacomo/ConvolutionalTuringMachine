@@ -61,11 +61,9 @@ During an inference cycle, the CTM undergoes the following steps:
 5. **Reward Integration (For Learning)**: In learning scenarios, an external reward is provided to the reward cell, influencing the latent state space's optimization but not altering the kernel.
 
 ### Mathematical description
-```math
-\begin{document}
+# Given:
 
-\section*{Given:}
-
+$$
 \begin{align*}
 &x \in \mathbb{R}^d \quad \text{(Input vector} \rightarrow \text{multi-index } x_{\text{idx}} \text{ for indexing the } x \text{ cells in } s) \\
 &y \in \mathbb{R}^q \quad \text{(Output vector} \rightarrow \text{multi-index } y_{\text{idx}} \text{ for indexing } y) \\
@@ -73,14 +71,18 @@ During an inference cycle, the CTM undergoes the following steps:
 &s \in \mathbb{R}^{n \times n} \quad \text{(State space)} \\
 &k \in \mathbb{R}^{m \times m}, \quad m \ll n \\
 \end{align*}
+$$
 
-\section*{BC: Boundary Conditions}
+## BC: Boundary Conditions
 
-$s[x_{\text{idx}}] = x$ \\
-$s[r_{\text{idx}}] = r$
+$$
+s[x_{\text{idx}}] = x \\
+s[r_{\text{idx}}] = r
+$$
 
-\section*{Inference}
+## Inference
 
+$$
 \begin{align*}
 &\text{Load a pretrained } s(t=0) \text{ (initial state) and a pretrained kernel } k \\
 &\text{Take the input } x \text{ and the reward } r \text{ coming from the environment feedback of the previous step} \\
@@ -93,9 +95,8 @@ $s[r_{\text{idx}}] = r$
 &\text{End or continue to next input } x, \text{ keeping the last state } s_{\text{halt}} \text{ as the new initial state } s_{\text{new}}(t=0) \\
 &\text{If continuing, interact with the environment or dataset and get the new reward } r_{\text{new}} \text{ for the next prediction } 
 \end{align*}
+$$
 
-\end{document}
-```
 
 
 ## Challenges and Training
