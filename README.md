@@ -99,7 +99,6 @@ $$
 &\\
 &\text{- Feed the output } y \text{ to the environment in RL settings or compare to the training data to get reward metric} \\
 &\text{- End or continue to next input } x, \text{ keeping the last state } s_{\text{halt}} \text{ as the new initial state } s_{\text{new}}(t=0) \\
-&\text{- If continuing, interact with the environment or dataset and get the new reward } r_{\text{new}} \text{ for the next prediction} 
 \end{align*}
 $$
 
