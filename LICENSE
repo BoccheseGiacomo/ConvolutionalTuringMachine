@@ -1,1 +1,10 @@
 Convolutional Turing Machine © 2023 by Giacomo Bocchese is licensed under CC BY-NC-SA 4.0 
+Additional conditions: anyone who uses this project must cite it with this text:
+@misc{ctm2023,
+  author = {Giacomo Bocchese},
+  title = {Convolutional Turing Machine: studying Meta-Learning Emergence from Cellular Automata},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/BoccheseGiacomo/ConvolutionalTuringMachine}}
+}
